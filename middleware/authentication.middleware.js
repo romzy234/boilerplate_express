@@ -1,4 +1,5 @@
 let { ModelUser } = require('../models');
+const jwt = require('jsonwebtoken');
 const { ErrorResponse, asyncHandler } = require('../core');
 
 exports.bodyParser = (req, res, next) => {
